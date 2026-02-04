@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Full Course</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="#">AuroraTours</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main  -->
+    <main>
+        <!-- boob up window -->
+        <section class="modal fade" tabindex="-1" id="booking-model">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="row g-2">
+                                <div class="form-floating col-sm-6">
+                                    <input id="email" type="email" class="form-control" placeholder="Your Email">
+                                    <label for="email.1">Email Address</label>
+                                </div>
+                                <div class="form-floating col-sm-6">
+                                    <select id="select1" class="form-select">
+                                        <option>Tromso, Norway - $899</option>
+                                        <option>Rwykjavik, Iceland - $799</option>
+                                        <option>Yukon, Canada - $849</option>
+                                    </select>
+                                    <label for="select1">Pick a tour</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- carousel  -->
+        <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active c-item">
+                    <img class="d-block w-100 c-img" src="./images/pexels-magda-ehlers-pexels-2114014.jpg"
+                        alt="First slide">
+                    <div class="carousel-caption text-light top-0 mt-5">
+                        <p class="fs-3 mt-5 text-uppercase">DISCOVER THE HIDDEN WORLD</p>
+                        <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+                        <button class="btn btn-primary px-4 py-2 mt-5 fs-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-model"> Book a tour</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img class="d-block w-100 c-img" src="./images/pexels-magda-ehlers-pexels-2114014.jpg"
+                        alt="Second slide">
+                    <div class="carousel-caption text-light top-0 mt-5">
+                        <p class="fs-3 mt-5 text-uppercase">DISCOVER THE HIDDEN WORLD</p>
+                        <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+                        <button class="btn btn-primary px-4 py-2 mt-5 fs-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-model"> Book a tour</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img class="d-block w-100 c-img" src="./images/pexels-ryank-34280561.jpg" alt="Third slide">
+                    <div class="carousel-caption text-light top-0 mt-5">
+                        <p class="fs-3 mt-5 text-uppercase">DISCOVER THE HIDDEN WORLD</p>
+                        <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+                        <button class="btn btn-primary px-4 py-2 mt-5 fs-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-model"> Book a tour</button>
+                    </div>
+                </div>
+            </div> <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- overview  -->
+        <section class="overview ">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row text-center w-100 fs-4">
+                    <div class="col-xl my-2"><i class="bi bi-airplane-fill me-2"></i> 3 amazing destination</div>
+                    <div class="col-xl my-2"><i class="bi bi-wallet-fill me-2"></i> Only pay 5% up front</div>
+                    <div class="col-xl my-2"><i class="bi bi-patch-check-fill  me-2"></i> 1000's of customer's</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
