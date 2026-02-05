@@ -19,16 +19,19 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand text-uppercase" href="#">AuroraTours</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Packages</a>
+                        <a class="nav-link" href="#packages">Packages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQs</a>
+                        <a class="nav-link" href="#faq">FAQs</a>
                     </li>
                 </ul>
             </div>
@@ -40,23 +43,23 @@
         <section class="modal fade" tabindex="-1" id="booking-model">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header d-flex justify-content-between">
-                        <h5 class="modal-title">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span>&times;</span>
-                        </button>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Book Your Adventure</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
                     <div class="modal-body">
                         <form action="#">
                             <div class="row g-2">
                                 <div class="form-floating col-sm-6">
                                     <input id="email" type="email" class="form-control" placeholder="Your Email">
-                                    <label for="email.1">Email Address</label>
+                                    <label for="email">Email Address</label>
                                 </div>
                                 <div class="form-floating col-sm-6">
                                     <select id="select1" class="form-select">
+                                        <option selected>Choose...</option>
                                         <option>Tromso, Norway - $899</option>
-                                        <option>Rwykjavik, Iceland - $799</option>
+                                        <option>Reykjavik, Iceland - $799</option>
                                         <option>Yukon, Canada - $849</option>
                                     </select>
                                     <label for="select1">Pick a tour</label>
@@ -66,8 +69,8 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit Booking</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -127,6 +130,116 @@
                 </div>
             </div>
         </section>
+
+        <!-- packages  -->
+        <section id="packages" class="pt-md-5">
+            <h2 class="text-center my-5">Packages</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg my-3 my-lg-0">
+                        <div class="card">
+                            <img src="./images/Newport Sunset.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tromso, Norway - $899</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card’s content.</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#booking-model">Book a tour</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg my-3 my-lg-0">
+                        <div class="card">
+                            <img src="./images/Newport Sunset.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Reykjavik, Iceland - $799</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card’s content.</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#booking-model">Book a tour</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg my-3 my-lg-0">
+                        <div class="card">
+                            <img src="./images/pexels-magda-ehlers-pexels-2114014.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Yukon, Canada - $849</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card’s content.</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#booking-model">Book a tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs  -->
+        <section id="faq" class="py-md-5">
+            <h2 class="my-5 text-center">Frequently Asked Questions</h2>
+            <div class="container">
+                <div class="accordion w-75 mx-auto" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                When is the best time to see the Northern Lights?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>The peak season is from September to late March.</strong> During these months,
+                                the nights are long and dark enough to provide the perfect backdrop for the Aurora
+                                Borealis. We recommend booking your tour during a "New Moon" phase for the darkest skies
+                                and best visibility.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What should I pack for the tour?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Warm layers are essential.</strong> Since we spend several hours outdoors in
+                                Arctic conditions, we recommend thermal base layers, a wool mid-layer, and a
+                                windproof/waterproof outer jacket. Don't forget insulated boots, a warm hat, and
+                                high-quality gloves!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What happens if we don't see the lights?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Nature is unpredictable, but we've got you covered.</strong> While we have an
+                                85% success rate, if the Aurora doesn't appear due to weather or solar activity, we
+                                offer a 50% discount on your next chase or a free seat on the following night's tour
+                                (subject to availability).
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 
